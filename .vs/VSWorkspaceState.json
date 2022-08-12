@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\server",
+    "\\server\\src",
+    "\\server\\src\\rooms",
+    "\\server\\src\\rooms\\schema"
+  ],
+  "SelectedNode": "\\server\\src\\rooms\\schema\\GameState.js",
+  "PreviewInSolutionExplorer": false
+}
