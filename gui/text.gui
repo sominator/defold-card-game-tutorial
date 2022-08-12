@@ -1,4 +1,4 @@
-script: "/main/text.gui_script"
+script: "/scripts/text.gui_script"
 fonts {
   name: "system_font"
   font: "/builtins/fonts/system_font.font"

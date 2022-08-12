@@ -19,7 +19,7 @@ embedded_instances {
   "}\n"
   "components {\n"
   "  id: \"cursorController\"\n"
-  "  component: \"/main/cursorController.script\"\n"
+  "  component: \"/scripts/cursorController.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -102,7 +102,7 @@ embedded_instances {
   data: "embedded_components {\n"
   "  id: \"playerCardFactory\"\n"
   "  type: \"factory\"\n"
-  "  data: \"prototype: \\\"/main/playerCard.go\\\"\\n"
+  "  data: \"prototype: \\\"/gameobjects/playerCard.go\\\"\\n"
   "load_dynamically: false\\n"
   "\"\n"
   "  position {\n"
@@ -120,7 +120,7 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"opponentCardFactory\"\n"
   "  type: \"factory\"\n"
-  "  data: \"prototype: \\\"/main/opponentCard.go\\\"\\n"
+  "  data: \"prototype: \\\"/gameobjects/opponentCard.go\\\"\\n"
   "load_dynamically: false\\n"
   "\"\n"
   "  position {\n"
@@ -138,7 +138,7 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"opponentCardBackFactory\"\n"
   "  type: \"factory\"\n"
-  "  data: \"prototype: \\\"/main/opponentCardBack.go\\\"\\n"
+  "  data: \"prototype: \\\"/gameobjects/opponentCardBack.go\\\"\\n"
   "load_dynamically: false\\n"
   "\"\n"
   "  position {\n"
@@ -175,7 +175,7 @@ embedded_instances {
   id: "gui"
   data: "components {\n"
   "  id: \"text\"\n"
-  "  component: \"/main/text.gui\"\n"
+  "  component: \"/gui/text.gui\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -211,7 +211,7 @@ embedded_instances {
   data: "embedded_components {\n"
   "  id: \"sprite\"\n"
   "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/uiAtlas.atlas\\\"\\n"
+  "  data: \"tile_set: \\\"/atlases/uiAtlas.atlas\\\"\\n"
   "default_animation: \\\"blue_button07\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
@@ -245,7 +245,7 @@ embedded_instances {
   "    position {\\n"
   "      x: 0.0\\n"
   "      y: 0.0\\n"
-  "      z: 0.0\\n"
+  "      z: 0.99\\n"
   "    }\\n"
   "    rotation {\\n"
   "      x: 0.0\\n"
@@ -292,6 +292,76 @@ embedded_instances {
   scale3 {
     x: 20.0
     y: 5.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "client"
+  data: "components {\n"
+  "  id: \"client\"\n"
+  "  component: \"/scripts/client.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "gameManager"
+  data: "components {\n"
+  "  id: \"gameManager\"\n"
+  "  component: \"/scripts/gameManager.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
     z: 1.0
   }
 }

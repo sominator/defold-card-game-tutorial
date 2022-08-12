@@ -1,6 +1,6 @@
 components {
   id: "card"
-  component: "/main/card.script"
+  component: "/scripts/card.script"
   position {
     x: 0.0
     y: 0.0
@@ -16,7 +16,7 @@ components {
 embedded_components {
   id: "sprite"
   type: "sprite"
-  data: "tile_set: \"/main/opponentCardAtlas.atlas\"\n"
+  data: "tile_set: \"/atlases/opponentCardAtlas.atlas\"\n"
   "default_animation: \"Magenta_Back3x\"\n"
   "material: \"/builtins/materials/sprite.material\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"

@@ -1,6 +1,6 @@
 components {
   id: "card"
-  component: "/main/card.script"
+  component: "/scripts/card.script"
   position {
     x: 0.0
     y: 0.0
@@ -16,8 +16,8 @@ components {
 embedded_components {
   id: "sprite"
   type: "sprite"
-  data: "tile_set: \"/main/playerCardAtlas.atlas\"\n"
-  "default_animation: \"Cyan_Ping3x\"\n"
+  data: "tile_set: \"/atlases/opponentCardAtlas.atlas\"\n"
+  "default_animation: \"Magenta_Ping3x\"\n"
   "material: \"/builtins/materials/sprite.material\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
   ""
@@ -60,8 +60,8 @@ embedded_components {
   "    index: 0\n"
   "    count: 3\n"
   "  }\n"
-  "  data: 266.1595\n"
-  "  data: 374.553\n"
+  "  data: 269.241\n"
+  "  data: 373.398\n"
   "  data: 10.0\n"
   "}\n"
   "linear_damping: 0.0\n"

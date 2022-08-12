@@ -3,15 +3,17 @@ local button = require "in.button"
 local pressed = false
 
 function init(self)
+	--register text game object as a button
 	button.acquire()
 	button.register("text", function()
-		print ("button!")
+		print ("Pressing a button!")
 		if not pressed then 
-			--spawn player cards, set their isDraggable property to true, and spawn opponentCardBacks
+			--spawn player cards and set their isDraggable property to true
 			for i = 1, 5 do
 				factory.create("/spawner#playerCardFactory", vmath.vector3(110 + (i * 50), 210, 0), nil, {isDraggable = true}, 0.3)
-				factory.create("/spawner#opponentCardBackFactory", vmath.vector3(110 + (i * 50), 810, 1), nil, nil, 0.3)
 			end
+			--send message to the client that cards have been drawn
+			msg.post("/client#client", "draw")
 			pressed = true
 		end
 	end)
